@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "sqlite": {
-      "command": "uvx",
-      "args": ["mcp-server-sqlite", "--db-path", "./test.db"]
+      "command": "docker",
+      "args": ["run", "-p", "8000:8000", "modelcontextprotocol/server-sqlite"]
     },
     "puppeteer": {
       "command": "npx",
